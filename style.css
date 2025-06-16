@@ -9,8 +9,116 @@
   font-family: comic;
   src: url("./fonts/ComicNeueSansID.ttf") format("truetype");
 }
+/*global config*/
+* {
+  /*removendo margem de tudo*/
+  margin: 0px;
+  /*removendo a distancia do conteudo para a borda de tudo*/
+  padding: 0px;
+}
 
-/*BODY*/
+/*BODY and HTML*/
+html,
+body {
+  /*mudando a cor de fundo do body e do html para cinza sombrio*/
+  background-color: darkgray;
+  /*Colocando como altura minima 100% da view port, altura da tela 100%*/
+  min-height: 100vh;
+}
 /*HEADER*/
+header {
+  background-color: black;
+  color: white;
+  min-height: 10vw;
+  text-align: center;
+  padding-bottom: 5vh;
+  padding-top: 6vh;
+}
+
+header > h1 {
+  font-variant: small-caps;
+  font-size: 7vw;
+}
+
+header > p {
+  font-variant: small-caps;
+  padding-bottom: 5vh;
+}
+
+header > p > a {
+  text-decoration: none;
+  color: white;
+  font-variant: small-caps;
+}
+
+header > p > a:hover {
+  text-decoration: underline;
+  color: black;
+  background-color: white;
+  padding: 1px;
+  font-weight: 900;
+  border-radius: 2px;
+}
+
+header > p > span {
+  font-size: larger;
+  color: rgba(255, 255, 255, 0.616);
+}
+
 /*MAIN*/
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+main > section > p {
+  padding-left: 30px;
+  font-family: comic, Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+  font-weight: 900;
+  font-size: 2.5vh;
+
+}
+
+.t {
+  background-color: blue;
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 2.5vh;  
+  background-attachment: fixed;
+}
+
+.normal {
+  background-color: white;
+  color: black;
+}
+
+.imagem {
+  color: white;
+}
+
+.jo {
+  background-image: url(imagens/background001.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 20vw;
+}
+
+.fo {
+    background-image: url(imagens/background002.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 20vw;
+}
+
 /*FOTTER*/
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
