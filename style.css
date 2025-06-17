@@ -9,113 +9,99 @@
   font-family: comic;
   src: url("./fonts/ComicNeueSansID.ttf") format("truetype");
 }
-/*global config*/
-* {
-  /*removendo margem de tudo*/
-  margin: 0px;
-  /*removendo a distancia do conteudo para a borda de tudo*/
-  padding: 0px;
+:root {
+  --font: comic, Arial, Helvetica, sans-serif;
 }
 
-/*BODY and HTML*/
+/*regras*/
+* {
+  margin: 0px; /*removendo a distancia das margens*/
+  padding: 0px; /*removendo a distancia do conteudo para as bordas*/
+}
+/*HTML BODY*/
 html,
 body {
-  /*mudando a cor de fundo do body e do html para cinza sombrio*/
-  background-color: darkgray;
-  /*Colocando como altura minima 100% da view port, altura da tela 100%*/
-  min-height: 100vh;
-}
-/*HEADER*/
-header {
-  background-color: black;
-  color: white;
-  min-height: 10vw;
-  text-align: center;
-  padding-bottom: 5vh;
-  padding-top: 6vh;
+  background-color: lightgray; /*Cor de fundo cinza claro*/
 }
 
+/*HEADER*/
+header {
+  background-color: black; /*cor de fundo preto*/
+  color: white; /*cor das letras branco*/
+  min-height: 10vh; /*Tamanho de 25% da altura disponivel da tela*/
+  text-align: center; /*conteudo centralizado*/
+  padding-top: 5vh; /*distancia do conteudo para o topo 5% do viemport*/
+  padding-bottom: 5vh; /*distancia do conteudo para o topo 5% do viemport*/
+}
 header > h1 {
-  font-variant: small-caps;
-  font-size: 7vw;
+  font-size: 8vw; /*tamanho da fonte aumenta de acordo com a largura disponivel*/
+  font-variant: small-caps; /*primeiras letras maiusculas e o resto minuscula*/
 }
 
 header > p {
-  font-variant: small-caps;
-  padding-bottom: 5vh;
-}
-
-header > p > a {
-  text-decoration: none;
-  color: white;
-  font-variant: small-caps;
-}
-
-header > p > a:hover {
-  text-decoration: underline;
-  color: black;
-  background-color: white;
-  padding: 1px;
-  font-weight: 900;
-  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.527);
 }
 
 header > p > span {
-  font-size: larger;
-  color: rgba(255, 255, 255, 0.616);
+  font-size: large;
+  font-variant: small-caps;
 }
 
+header > p > a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+header > p > a:hover {
+  color: black;
+  font-weight: bolder;
+  background-color: white;
+  text-decoration: underline;
+  border-radius: 2px;
+  padding: 1px;
+}
 /*MAIN*/
 
-section {
-  padding-top: 10vh;
-  padding-bottom: 20vh;
-}
 main > section > p {
-  padding-left: 30px;
-  font-family: comic, Arial, Helvetica, sans-serif;
-  line-height: 1.5em;
-  font-weight: 900;
+  font-family: var(--font);
+  padding: 5vh 5vh 5vh 5vh;
+  font-weight: bolder;
+  line-height: 5vh;
   font-size: 3vh;
 }
-.t{
-  background-color: rgba(27, 24, 24, 0.24);
-  display: inline-block;
-  padding: 10px 10px 10px;
-}
 
-.normal {
+.comum {
   background-color: white;
-  color: black;
 }
-
-.imagem {
+.imagema {
+  background-image: url(imagens/background001.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 30px 30px 40px 10px;
+}
+.b{
   color: white;
 }
+.c{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.089);
+  display: inline-block;
 
-.jo {
-  background-image: url(imagens/background001.jpg);
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 30vw;
 }
 
-.fo {
-  position: relative;
+.imagemb {
   background-image: url(imagens/background002.jpg);
+  background-position: center left;
   background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
   background-attachment: fixed;
-  height: 30vw;
+  padding: 30px 30px 40px 10px;
 }
-
 /*FOTTER*/
 footer {
   background-color: black;
   color: white;
-  text-align: center;
   padding: 10px;
+  text-align: center;
 }
