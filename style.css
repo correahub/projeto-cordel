@@ -9,6 +9,9 @@
   font-family: comic;
   src: url("./fonts/ComicNeueSansID.ttf") format("truetype");
 }
+:root {
+  --font: comic, Arial, Helvetica, sans-serif;
+}
 
 /*regras*/
 * {
@@ -59,4 +62,23 @@ header > p > a:hover {
   padding: 1px;
 }
 /*MAIN*/
+
+main>section>p{
+  font-family: var(--font);
+  padding: 5vh 0vh 5vh 5vh;
+  font-weight: bolder;
+  line-height: 4.0vh;
+  font-size: 3vh;
+
+}
+
+.comum {
+  background-color: white;
+}
 /*FOTTER*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
