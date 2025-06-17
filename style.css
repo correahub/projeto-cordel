@@ -63,17 +63,40 @@ header > p > a:hover {
 }
 /*MAIN*/
 
-main>section>p{
+main > section > p {
   font-family: var(--font);
-  padding: 5vh 0vh 5vh 5vh;
+  padding: 5vh 5vh 5vh 5vh;
   font-weight: bolder;
-  line-height: 4.0vh;
+  line-height: 5vh;
   font-size: 3vh;
-
 }
 
 .comum {
   background-color: white;
+}
+.imagema {
+  background-image: url(imagens/background001.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 30px 30px 40px 10px;
+}
+.b{
+  color: white;
+}
+.c{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.089);
+  display: inline-block;
+
+}
+
+.imagemb {
+  background-image: url(imagens/background002.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 30px 30px 40px 10px;
 }
 /*FOTTER*/
 footer {
